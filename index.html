@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONUT Info - Complete DONUT Mining Analytics & Guide</title>
+    <meta name="description" content="Your go-to resource for DONUT protocol mining. Learn how it works, get started, track analytics, and optimize your mining strategy.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="donut-icon">🍩</span>
+                <span class="brand-name">DONUT Info</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#getting-started">Get Started</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#frontends">Frontends</a></li>
+                <li><a href="#referral">Earn 5%</a></li>
+            </ul>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Complete DONUT Mining Analytics</h1>
+                <p class="hero-subtitle">Your comprehensive guide to DONUT protocol mining, analytics, and optimization</p>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-miners">-</div>
+                        <div class="stat-label">Active Miners</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="current-apy">-</div>
+                        <div class="stat-label">Current APY</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-rewards">-</div>
+                        <div class="stat-label">Total Rewards</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="network-hashrate">-</div>
+                        <div class="stat-label">Network Hashrate</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="#getting-started" class="btn btn-primary">Start Mining</a>
+                    <a href="#calculator" class="btn btn-secondary">Calculate Rewards</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title">How DONUT Mining Works</h2>
+            <div class="works-grid">
+                <div class="work-card">
+                    <div class="work-icon">1️⃣</div>
+                    <h3>Proof of Work</h3>
+                    <p>DONUT uses a unique proof-of-work algorithm that allows miners to contribute computational power to secure the network and earn rewards.</p>
+                </div>
+                <div class="work-card">
+                    <div class="work-icon">2️⃣</div>
+                    <h3>Mining Rounds</h3>
+                    <p>Mining happens in rounds. Each round has a specific difficulty and reward pool. Miners compete to solve computational challenges.</p>
+                    </div>
+                <div class="work-card">
+                    <div class="work-icon">3️⃣</div>
+                    <h3>Reward Distribution</h3>
+                    <p>Rewards are distributed proportionally based on your contribution to the network hashrate during each round.</p>
+                </div>
+                <div class="work-card">
+                    <div class="work-icon">4️⃣</div>
+                    <h3>Staking & Refinement</h3>
+                    <p>Earned DONUT tokens can be staked or refined for additional yield, creating multiple income streams.</p>
+                </div>
+            </div>
+
+            <div class="technical-details">
+                <h3>Technical Details</h3>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <strong>Algorithm:</strong>
+                        <span>Equihash-based PoW</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Block Time:</strong>
+                        <span>60 seconds</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Reward Halving:</strong>
+                        <span>Every 210,000 blocks</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Max Supply:</strong>
+                        <span>21,000,000 DONUT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Getting Started -->
+    <section id="getting-started" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Getting Started with DONUT Mining</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">Step 1</div>
+                    <h3>Set Up Your Wallet</h3>
+                    <p>Create a DONUT-compatible wallet to receive your mining rewards. We recommend using:</p>
+                    <ul>
+                        <li>Phantom Wallet (Recommended)</li>
+                        <li>Solflare Wallet</li>
+                        <li>Backpack Wallet</li>
+                    </ul>
+                    <a href="#frontends" class="btn btn-outline">View All Wallets</a>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">Step 2</div>
+                    <h3>Choose Your Mining Method</h3>
+                    <p>Select the mining approach that best fits your setup:</p>
+                    <ul>
+                        <li><strong>Web Mining:</strong> Browser-based, easy to start</li>
+                        <li><strong>CLI Mining:</strong> Command-line interface for advanced users</li>
+                        <li><strong>Auto Mining:</strong> Automated mining with optimized strategies</li>
+                    </ul>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">Step 3</div>
+                    <h3>Configure Your Miner</h3>
+                    <p>Install and configure your preferred mining software:</p>
+                    <div class="code-block">
+                        <code>
+# Install DONUT miner<br>
+npm install -g donut-miner<br>
+<br>
+# Start mining<br>
+donut-miner --wallet YOUR_WALLET_ADDRESS
+                        </code>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">Step 4</div>
+                    <h3>Optimize & Monitor</h3>
+                    <p>Use our tools to maximize your mining efficiency:</p>
+                    <ul>
+                        <li>Track real-time analytics</li>
+                        <li>Optimize mining strategy based on network conditions</li>
+                        <li>Set up alerts for important events</li>
+                        <li>Join the referral program to earn 5% additional rewards</li>
+                    </ul>
+                    <a href="#analytics" class="btn btn-outline">View Analytics</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontends -->
+    <section id="frontends" class="section">
+        <div class="container">
+            <h2 class="section-title">DONUT Frontends & Tools</h2>
+            <p class="section-description">Access DONUT through various frontends and tools built by the community</p>
+
+            <div class="frontends-grid">
+                <div class="frontend-card">
+                    <h3>🌐 Web Miners</h3>
+                    <ul class="frontend-links">
+                        <li><a href="#" target="_blank">Official DONUT Miner</a></li>
+                        <li><a href="#" target="_blank">DONUT AutoMiner</a></li>
+                        <li><a href="#" target="_blank">QuickDonut Miner</a></li>
+                    </ul>
+                </div>
+
+                <div class="frontend-card">
+                    <h3>📊 Analytics Platforms</h3>
+                    <ul class="frontend-links">
+                        <li><a href="#" target="_blank">DONUT Stats</a></li>
+                        <li><a href="#" target="_blank">Donut Explorer</a></li>
+                        <li><a href="#" target="_blank">Mining Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="frontend-card">
+                    <h3>💼 Wallets</h3>
+                    <ul class="frontend-links">
+                        <li><a href="https://phantom.app" target="_blank">Phantom</a></li>
+                        <li><a href="https://solflare.com" target="_blank">Solflare</a></li>
+                        <li><a href="https://backpack.app" target="_blank">Backpack</a></li>
+                    </ul>
+                </div>
+
+                <div class="frontend-card">
+                    <h3>🔧 Developer Tools</h3>
+                    <ul class="frontend-links">
+                        <li><a href="#" target="_blank">DONUT CLI</a></li>
+                        <li><a href="#" target="_blank">API Documentation</a></li>
+                        <li><a href="#" target="_blank">GitHub Repository</a></li>
+                    </ul>
+                </div>
+
+                <div class="frontend-card">
+                    <h3>💱 Exchanges</h3>
+                    <ul class="frontend-links">
+                        <li><a href="#" target="_blank">Jupiter (DEX)</a></li>
+                        <li><a href="#" target="_blank">Raydium (DEX)</a></li>
+                        <li><a href="#" target="_blank">View All Markets</a></li>
+                    </ul>
+                </div>
+
+                <div class="frontend-card">
+                    <h3>👥 Community</h3>
+                    <ul class="frontend-links">
+                        <li><a href="#" target="_blank">Discord</a></li>
+                        <li><a href="#" target="_blank">Telegram</a></li>
+                        <li><a href="#" target="_blank">Twitter/X</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics -->
+    <section id="analytics" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Live DONUT Analytics</h2>
+
+            <div class="analytics-grid">
+                <div class="analytics-card">
+                    <h3>Mining Overview</h3>
+                    <div class="metric">
+                        <span class="metric-label">Current Difficulty:</span>
+                        <span class="metric-value" id="difficulty">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Network Hashrate:</span>
+                        <span class="metric-value" id="hashrate">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Block Reward:</span>
+                        <span class="metric-value" id="block-reward">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Round Duration:</span>
+                        <span class="metric-value" id="round-duration">-</span>
+                    </div>
+                </div>
+
+                <div class="analytics-card">
+                    <h3>Token Metrics</h3>
+                    <div class="metric">
+                        <span class="metric-label">Price:</span>
+                        <span class="metric-value" id="token-price">$-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Market Cap:</span>
+                        <span class="metric-value" id="market-cap">$-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">24h Volume:</span>
+                        <span class="metric-value" id="volume">$-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Circulating Supply:</span>
+                        <span class="metric-value" id="supply">-</span>
+                    </div>
+                </div>
+
+                <div class="analytics-card">
+                    <h3>Yield Opportunities</h3>
+                    <div class="metric">
+                        <span class="metric-label">Mining APY:</span>
+                        <span class="metric-value highlight" id="mining-apy">-%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Staking APY:</span>
+                        <span class="metric-value highlight" id="staking-apy">-%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Refinement APY:</span>
+                        <span class="metric-value highlight" id="refinement-apy">-%</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Combined APY:</span>
+                        <span class="metric-value highlight" id="combined-apy">-%</span>
+                    </div>
+                </div>
+
+                <div class="analytics-card">
+                    <h3>Network Stats</h3>
+                    <div class="metric">
+                        <span class="metric-label">Total Blocks:</span>
+                        <span class="metric-value" id="total-blocks">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Active Miners:</span>
+                        <span class="metric-value" id="active-miners">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Avg Block Time:</span>
+                        <span class="metric-value" id="avg-block-time">-</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-label">Next Halving:</span>
+                        <span class="metric-value" id="next-halving">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h3>Hashrate History</h3>
+                <canvas id="hashrate-chart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mining Strategy -->
+    <section id="strategy" class="section">
+        <div class="container">
+            <h2 class="section-title">Mining Strategy Guide</h2>
+
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h3>⚡ Performance Optimization</h3>
+                    <ul>
+                        <li><strong>Hardware Selection:</strong> Choose GPUs with high compute efficiency</li>
+                        <li><strong>Overclocking:</strong> Fine-tune GPU settings for optimal hashrate</li>
+                        <li><strong>Cooling:</strong> Maintain proper temperatures to avoid throttling</li>
+                        <li><strong>Power Management:</strong> Balance power consumption vs. hashrate</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>📈 Profitability Strategies</h3>
+                    <ul>
+                        <li><strong>Monitor Difficulty:</strong> Mine when difficulty is lower</li>
+                        <li><strong>Track Network Hashrate:</strong> Adjust strategy based on competition</li>
+                        <li><strong>Calculate ROI:</strong> Use our calculator to estimate returns</li>
+                        <li><strong>Diversify:</strong> Combine mining with staking for steady income</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>🎯 Timing Optimization</h3>
+                    <ul>
+                        <li><strong>Round Analysis:</strong> Join rounds early for better positioning</li>
+                        <li><strong>Peak Hours:</strong> Avoid mining during peak network activity</li>
+                        <li><strong>Market Timing:</strong> Consider token price when planning operations</li>
+                        <li><strong>Reward Claims:</strong> Claim rewards strategically to minimize fees</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>🔄 Advanced Techniques</h3>
+                    <ul>
+                        <li><strong>Auto-Mining Bots:</strong> Use automated strategies for efficiency</li>
+                        <li><strong>Pool Mining:</strong> Join mining pools to reduce variance</li>
+                        <li><strong>Multi-Account:</strong> Distribute hashrate across multiple wallets</li>
+                        <li><strong>Referral Stacking:</strong> Build referral network for 5% bonus</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="strategy-tips">
+                <h3>💡 Pro Tips</h3>
+                <div class="tips-grid">
+                    <div class="tip">
+                        <strong>Tip #1:</strong> Monitor gas fees and mine during low-fee periods to maximize net profits
+                    </div>
+                    <div class="tip">
+                        <strong>Tip #2:</strong> Reinvest 50% of earnings into staking for compounding returns
+                    </div>
+                    <div class="tip">
+                        <strong>Tip #3:</strong> Set up Telegram alerts to never miss important mining events
+                    </div>
+                    <div class="tip">
+                        <strong>Tip #4:</strong> Join the community Discord to share strategies and stay updated
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator & Simulator -->
+    <section id="calculator" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">DONUT Mining Calculator</h2>
+            <p class="section-description">Estimate your potential mining rewards and ROI</p>
+
+            <div class="calculator-container">
+                <div class="calculator-inputs">
+                    <div class="input-group">
+                        <label for="hashrate-input">Your Hashrate (H/s)</label>
+                        <input type="number" id="hashrate-input" value="1000" min="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="power-input">Power Consumption (W)</label>
+                        <input type="number" id="power-input" value="200" min="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="electricity-cost">Electricity Cost ($/kWh)</label>
+                        <input type="number" id="electricity-cost" value="0.12" step="0.01" min="0">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="pool-fee">Pool Fee (%)</label>
+                        <input type="number" id="pool-fee" value="1" step="0.1" min="0" max="100">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="referral-bonus">Referral Bonus (%)</label>
+                        <input type="number" id="referral-bonus" value="0" step="0.5" min="0" max="5">
+                        <small>Earn up to 5% by referring miners</small>
+                    </div>
+
+                    <button id="calculate-btn" class="btn btn-primary">Calculate</button>
+                </div>
+
+                <div class="calculator-results">
+                    <h3>Estimated Earnings</h3>
+
+                    <div class="result-item">
+                        <span class="result-label">Daily:</span>
+                        <span class="result-value" id="daily-earnings">-</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Weekly:</span>
+                        <span class="result-value" id="weekly-earnings">-</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Monthly:</span>
+                        <span class="result-value" id="monthly-earnings">-</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Yearly:</span>
+                        <span class="result-value" id="yearly-earnings">-</span>
+                    </div>
+
+                    <hr>
+
+                    <h3>Costs & Profit</h3>
+
+                    <div class="result-item">
+                        <span class="result-label">Daily Electricity:</span>
+                        <span class="result-value" id="daily-cost">-</span>
+                    </div>
+
+                    <div class="result-item">
+                        <span class="result-label">Monthly Electricity:</span>
+                        <span class="result-value" id="monthly-cost">-</span>
+                    </div>
+
+                    <div class="result-item highlight-result">
+                        <span class="result-label">Net Monthly Profit:</span>
+                        <span class="result-value" id="net-profit">-</span>
+                    </div>
+
+                    <div class="result-item highlight-result">
+                        <span class="result-label">Estimated APY:</span>
+                        <span class="result-value" id="estimated-apy">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="simulator-note">
+                <p><strong>Note:</strong> These calculations are estimates based on current network conditions. Actual earnings may vary due to network difficulty changes, token price fluctuations, and other factors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Referral Program -->
+    <section id="referral" class="section">
+        <div class="container">
+            <h2 class="section-title">Earn 5% Referral Rewards</h2>
+            <p class="section-description">Build your mining network and earn passive income from referrals</p>
+
+            <div class="referral-hero">
+                <div class="referral-content">
+                    <h3>💰 How the Referral Program Works</h3>
+                    <div class="referral-steps">
+                        <div class="referral-step">
+                            <div class="step-icon">1</div>
+                            <div class="step-content">
+                                <h4>Share Your Link</h4>
+                                <p>Get your unique referral link and share it with other miners</p>
+                            </div>
+                        </div>
+                        <div class="referral-step">
+                            <div class="step-icon">2</div>
+                            <div class="step-content">
+                                <h4>They Start Mining</h4>
+                                <p>When someone uses your link and starts mining DONUT</p>
+                            </div>
+                        </div>
+                        <div class="referral-step">
+                            <div class="step-icon">3</div>
+                            <div class="step-content">
+                                <h4>Earn 5% Forever</h4>
+                                <p>You earn 5% of their mining rewards automatically, forever</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="referral-calculator">
+                    <h3>Referral Earnings Calculator</h3>
+                    <div class="input-group">
+                        <label for="referrals-count">Number of Referrals</label>
+                        <input type="number" id="referrals-count" value="10" min="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="avg-earnings">Avg. Daily Earnings per Referral ($)</label>
+                        <input type="number" id="avg-earnings" value="5" min="0" step="0.1">
+                    </div>
+                    <button id="calc-referral-btn" class="btn btn-secondary">Calculate</button>
+
+                    <div class="referral-results">
+                        <div class="ref-result">
+                            <span>Your Daily Referral Income:</span>
+                            <strong id="ref-daily">$0.00</strong>
+                        </div>
+                        <div class="ref-result">
+                            <span>Your Monthly Referral Income:</span>
+                            <strong id="ref-monthly">$0.00</strong>
+                        </div>
+                        <div class="ref-result highlight">
+                            <span>Your Yearly Referral Income:</span>
+                            <strong id="ref-yearly">$0.00</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-benefits">
+                <h3>Referral Program Benefits</h3>
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <span class="benefit-icon">♾️</span>
+                        <h4>Lifetime Rewards</h4>
+                        <p>Earn 5% from your referrals forever, as long as they mine</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">📊</span>
+                        <h4>Track Performance</h4>
+                        <p>Dashboard to monitor your referrals and earnings in real-time</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🎁</span>
+                        <h4>No Limits</h4>
+                        <p>Unlimited referrals - the more you refer, the more you earn</p>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">⚡</span>
+                        <h4>Instant Payouts</h4>
+                        <p>Referral rewards are automatically added to your mining balance</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="referral-cta">
+                <h3>Ready to Start Earning?</h3>
+                <p>Connect your wallet to get your unique referral link</p>
+                <button class="btn btn-primary btn-large">Connect Wallet & Get Link</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>DONUT Info</h4>
+                    <p>Your comprehensive resource for DONUT protocol mining, analytics, and community.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="Discord">Discord</a>
+                        <a href="#" aria-label="Telegram">Telegram</a>
+                        <a href="#" aria-label="GitHub">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#getting-started">Getting Started</a></li>
+                        <li><a href="#analytics">Analytics</a></li>
+                        <li><a href="#calculator">Calculator</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#frontends">Frontends</a></li>
+                        <li><a href="#strategy">Mining Strategy</a></li>
+                        <li><a href="#referral">Referral Program</a></li>
+                        <li><a href="#">Documentation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Discord Server</a></li>
+                        <li><a href="#">Telegram Group</a></li>
+                        <li><a href="#">Twitter/X</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 DONUT Info. Built by the community, for the community.</p>
+                <p class="disclaimer">This is an informational resource. Always DYOR (Do Your Own Research) before mining or investing.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
